@@ -229,6 +229,9 @@
 
             <!-- Page Content -->
             <main>
+                <div v-if="$page.flash.status" class="bg-green-500 text-white-sm font-bold p-4">
+                    <p>{{ $page.flash.status }}</p>
+                </div>
                 <slot></slot>
             </main>
         </div>
